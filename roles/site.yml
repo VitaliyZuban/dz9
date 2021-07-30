@@ -1,0 +1,19 @@
+---
+- name: mvn-server configuration
+  hosts: mvn
+  become: yes
+
+  roles:
+    - upgrade
+    - mvn
+    - setupgit
+    - build
+
+- name: web-server configuration
+  hosts: web
+  become: yes
+
+  roles:
+    - upgrade
+    - webserver
+    - transfer

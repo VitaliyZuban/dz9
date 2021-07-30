@@ -1,0 +1,8 @@
+---
+# tasks for mvn
+- name: install packages
+  apt: name={{item}} state=installed
+  with_items:
+    - git
+    - openjdk-11-jre-headless
+    - maven

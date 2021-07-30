@@ -1,0 +1,7 @@
+---
+# tasks for transfer
+- name: Transfer file from mvn to web
+      synchronize:
+        src: /root/complete/target/hello-1.0.war
+        dest: /var/lib/tomcat9/webapps
+      delegate_to: 178.154.207.38

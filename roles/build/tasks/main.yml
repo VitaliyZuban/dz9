@@ -1,0 +1,4 @@
+---
+# tasks for build
+- name: Build app
+    shell: mvn package chdir="/root/complete"

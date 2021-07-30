@@ -1,0 +1,4 @@
+---
+# tasks for upgrade
+- name: Upgrade apt
+    apt: upgrade=dist force_apt_get=yes cache_valid_time=86400 #One day

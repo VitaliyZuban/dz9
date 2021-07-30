@@ -1,0 +1,6 @@
+---
+# tasks for webserver
+- name: install packages
+  apt: name={{item}} state=installed
+  with_items:
+    - tomcat9
